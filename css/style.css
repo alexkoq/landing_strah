@@ -34,11 +34,29 @@ h4, h5, h6, h1, h2, h3, ul, p {
   margin-left: 30px;
 }
 
+.number {
+  vertical-align: middle;
+}
+.number a {
+  vertical-align: middle;
+  line-height: 28px;
+  text-decoration: none;
+  color: #000;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.number a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 h1 {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 30pt;
+  font-size: 30px;
+  color: #444444;
 }
 
 h2 {
