@@ -26,6 +26,7 @@
   font-style: normal
 
 $dark_grey: #444444
+$yellow: #ffea00
 
 html
   box-sizing: border-box
@@ -43,3 +44,30 @@ h4,h5,h6,h1,h2,h3,ul,p
   background-repeat: no-repeat
   background-size: cover
   min-height: 900px
+  padding-top: 20px
+
+.logo
+  @include background(url(../img/logo.png),192px,41px)
+  margin-left: 30px
+
+h1
+  @include font-bold-norm()
+  font-size: 30pt
+
+h2
+  @include font-bold-norm()
+  font-size: 36px
+  color: $yellow
+  display: inline
+  background: $dark_grey
+  line-height: 50px
+  border-radius: 5px
+  padding-left: 5px
+  padding-right: 5px
+
+ul
+  padding-left: 0px
+
+li
+  list-style: none
+  @include background(url(../img/check_arrow.png),20px,20px)
