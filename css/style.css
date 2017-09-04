@@ -87,17 +87,34 @@ h2 {
   margin-bottom: 5px;
 }
 
-ul {
-  padding-left: 0px;
+.ul-title {
+  padding-top: 30px;
+}
+.ul-title p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 21px;
+  color: #444444;
 }
 
-li {
-  list-style: none;
-  background-image: url(../img/check_arrow.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 20px;
+.list ul {
+  padding-left: 15px;
+  list-style-image: url(../img/check_arrow.png);
+}
+.list ul li {
   height: 20px;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+.list ul li span {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 18px;
+  vertical-align: 4px;
+  line-height: 18px;
+  color: #444444;
 }
 
 /*# sourceMappingURL=style.css.map */

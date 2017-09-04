@@ -10,6 +10,11 @@
   font-weight: 400
   font-style: normal
 
+@mixin font-reg-ital()
+  font-family: 'Ubuntu', sans-serif
+  font-weight: 400
+  font-style: italic
+
 @mixin font-med-norm()
   font-family: 'Ubuntu', sans-serif
   font-weight: 500
@@ -86,13 +91,31 @@ h2
   padding-top: 5px
   padding-bottom: 5px
 
-
 .yellow_text
   margin-bottom: 5px
 
-ul
-  padding-left: 0px
+.ul-title
+  padding-top: 30px
+  p
+    @include font-med-norm()
+    font-size: 21px
+    color: $dark_grey
 
-li
-  list-style: none
-  @include background(url(../img/check_arrow.png),20px,20px)
+.list ul
+  padding-left: 15px
+  list-style-image: url(../img/check_arrow.png)
+  li
+    height: 20px
+    margin-top: 20px
+    padding-left: 10px
+    span
+      @include font-reg-ital()
+      font-size: 18px
+      vertical-align: 4px
+      line-height: 18px
+      color: $dark_grey
+
+
+// .list li
+//   list-style: none
+//   // @include background(url(../img/check_arrow.png),20px,20px)
