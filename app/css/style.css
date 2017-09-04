@@ -6,7 +6,7 @@ html {
 body {
   width: 100%;
   margin: 0 0 0 0;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   font-style: normal;
   -webkit-box-sizing: border-box;
@@ -20,14 +20,16 @@ h4, h5, h6, h1, h2, h3, ul, p {
 .wrap {
   background-image: url(../img/bg.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
   min-height: 900px;
   padding-top: 20px;
 }
 
 .logo {
   background-image: url(../img/logo.png);
-  background-size: contain;
+  -webkit-background-size: contain;
+          background-size: contain;
   background-repeat: no-repeat;
   width: 192px;
   height: 41px;
@@ -37,15 +39,17 @@ h4, h5, h6, h1, h2, h3, ul, p {
 .number {
   vertical-align: middle;
 }
+
 .number a {
   vertical-align: middle;
   line-height: 28px;
   text-decoration: none;
   color: #444444;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
   font-style: normal;
 }
+
 .number a:hover {
   text-decoration: underline;
   cursor: pointer;
@@ -54,12 +58,13 @@ h4, h5, h6, h1, h2, h3, ul, p {
 .text-wrap {
   margin-top: 75px;
 }
+
 .text-wrap h1 {
   margin-bottom: 10px;
 }
 
 h1 {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 30px;
@@ -67,7 +72,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 36px;
@@ -75,7 +80,8 @@ h2 {
   display: inline;
   background: #444444;
   line-height: 50px;
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
   padding-left: 10px;
   padding-right: 15px;
   vertical-align: middle;
@@ -90,8 +96,9 @@ h2 {
 .ul-title {
   padding-top: 30px;
 }
+
 .ul-title p {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 21px;
@@ -102,13 +109,15 @@ h2 {
   padding-left: 15px;
   list-style-image: url(../img/check_arrow.png);
 }
+
 .list ul li {
   height: 20px;
   margin-top: 20px;
   padding-left: 10px;
 }
+
 .list ul li span {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   font-style: italic;
   font-size: 18px;
@@ -116,5 +125,3 @@ h2 {
   line-height: 18px;
   color: #444444;
 }
-
-/*# sourceMappingURL=style.css.map */
