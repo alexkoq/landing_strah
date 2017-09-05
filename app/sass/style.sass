@@ -10,6 +10,11 @@
   font-weight: 400
   font-style: normal
 
+@mixin font-lig-norm()
+  font-family: 'Ubuntu', sans-serif
+  font-weight: 300
+  font-style: normal
+
 @mixin font-reg-ital()
   font-family: 'Ubuntu', sans-serif
   font-weight: 400
@@ -31,7 +36,7 @@
   font-style: normal
 
 $dark_grey: #444444
-$ligth_grey: #888888
+$light_grey: #888888
 $yellow: #ffea00
 
 html
@@ -105,8 +110,9 @@ h2
 .list ul
   padding-left: 15px
   list-style-image: url(../img/check_arrow.png)
+  min-height: 180px
   li
-    height: 20px
+    min-height: 20px
     margin-top: 20px
     padding-left: 10px
     span
@@ -116,49 +122,96 @@ h2
       line-height: 18px
       color: $dark_grey
 
-// .payments-wrap
-//   padding-top: 200px
-//   padding-bottom: 45px
-//   img
-//     display: block
-//     margin: 0 auto
-
-// .first-line
-//   padding-bottom: 35px
-
-// .london,.dowjones,.nasdaq
-//   align-self: center
+@import "payments.sass"
 
 .policy
   text-align: center 
   padding-bottom: 15px
-  @include font-reg-norm()
+  @mixin font-lig-norm()
   font-size: 11px
   a 
     color: $dark_grey
 
 .footer
   background-color: $dark_grey
-  height: 235px
-  color: $ligth_grey
+  min-height: 235px
+  color: $light_grey
+.links 
+  padding-top: 30px
+  padding-bottom: 20px
+  div
+    padding-right: 0px
+    padding-left: 0px
+  a 
+    color: $light_grey
+    text-decoration: none
+    &:hover
+      text-decoration: underline
 
-@import "payments.sass"
+.age-18
+  @include background(url(../img/18.png),31px,31px)
+  align-self: center
 
-// @media (max-width: 1200px)
-//   .diners,.borse
-//     margin-top: 20px
+.clean-100
+  @include background(url(../img/war_100.png),38px,38px)
 
-// @media (max-width: 991px)
-//   .webmoney,.qiwi,.swift,.diners,.borse
-//     margin-top: 20px
-//   .diners
-//     img
-//       margin-left: auto
-//       margin-right: none
-//   .borse
-//     img
-//       margin-right: auto
-//       margin-left: none
-// .list li
-//   list-style: none
-//   // @include background(url(../img/check_arrow.png),20px,20px)
+.ssl
+  @include background(url(../img/ssl.png),41px,35px)
+
+.bottom-text-wrap
+  color: $light_grey
+  text-align: center
+  font-size: 14px
+  line-height: 2em
+  padding-top: 20px
+
+.copyright
+  padding-top: 20px
+  
+
+
+@media (max-width: 1200px)
+  .links
+    line-height: 26px
+
+  .clean-100
+    margin-left: 40px
+    margin-right: 40px
+
+  .cer span
+    display: none
+
+@media (max-width: 991px)
+  .links
+    text-align: center
+   
+  .ps span
+    padding-left: 17px
+  
+  .pr span
+    padding-left: 17px
+  
+  .cer span
+    display: all !important
+    padding-left: 17px
+  
+  .ut span
+    display: none
+  .ut a
+    margin-left: -10px
+
+  .cer
+    text-align: right
+    padding-right: 20px !important
+  
+  .arb
+    text-align: left
+    padding-left: 20px !important
+  
+
+@media (max-width: 767px)
+  .ps,.pr,.cer,.ut,.arb 
+    text-align: center;
+
+  .cer,.arb
+    padding: 0
