@@ -126,26 +126,6 @@ h2 {
   color: #444444;
 }
 
-.payments-wrap {
-  padding-top: 200px;
-  padding-bottom: 45px;
-}
-
-.payments-wrap img {
-  display: block;
-  margin: 0 auto;
-}
-
-.first-line {
-  padding-bottom: 35px;
-}
-
-.london, .dowjones, .nasdaq {
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
-}
-
 .policy {
   text-align: center;
   padding-bottom: 15px;
@@ -163,6 +143,26 @@ h2 {
   background-color: #444444;
   height: 235px;
   color: #888888;
+}
+
+.payments-wrap {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.payments-wrap img {
+  display: block;
+  margin: 0 auto;
+}
+
+.first-line {
+  padding-bottom: 35px;
+}
+
+.london, .dowjones, .nasdaq {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
 }
 
 @media (max-width: 1200px) {
