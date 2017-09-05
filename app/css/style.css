@@ -252,9 +252,6 @@ h2 {
     margin-left: 40px;
     margin-right: 40px;
   }
-  .cer span {
-    display: none;
-  }
 }
 
 @media (max-width: 991px) {
@@ -268,7 +265,6 @@ h2 {
     padding-left: 17px;
   }
   .cer span {
-    display: all !important;
     padding-left: 17px;
   }
   .ut span {
@@ -279,7 +275,7 @@ h2 {
   }
   .cer {
     text-align: right;
-    padding-right: 20px !important;
+    padding-right: 0px !important;
   }
   .arb {
     text-align: left;
@@ -291,8 +287,23 @@ h2 {
   .ps, .pr, .cer, .ut, .arb {
     text-align: center;
   }
-  .cer, .arb {
-    padding: 0;
+  .ps span {
+    display: none;
+  }
+  .pr span {
+    display: none;
+  }
+  .cer span {
+    display: none;
+  }
+  .ut span {
+    display: none;
+  }
+  .cer {
+    padding-right: 0px !important;
+  }
+  .arb {
+    padding-left: 0px !important;
   }
 }
 
